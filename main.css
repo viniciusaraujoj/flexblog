@@ -21,7 +21,7 @@ Global Styles
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #222;
 }
 
@@ -39,8 +39,15 @@ img {
 }
 
 .center {
+  width: 85vw;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 650px) {
+  .center {
+    width: 90vw;
+  }
 }
 
 /*
@@ -60,7 +67,7 @@ Super Info
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .superinfo a {
@@ -84,9 +91,7 @@ Menu
 }
 
 .menu {
-  /* max-width: 1170px;
-  margin: 0 auto; */
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -146,7 +151,8 @@ Title
 */
 
 .title {
-  padding: 3rem 1rem 0 1rem;
+  /* padding: 3rem 1rem 0 1rem; */
+  padding-top: 3rem;
 }
 
 .title h1 {
@@ -160,7 +166,7 @@ Sobre
 */
 
 .sobre {
-  padding: 3rem 1rem;
+  padding: 3rem 0;
 }
 
 .sobre-container {
